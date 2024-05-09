@@ -1,0 +1,292 @@
+body {
+    font-family: 'Bebas Neue', sans-serif; /* Set font family for the entire document */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #1f1f1f; /* Set background color */
+    color: #fff; /* Set text color */
+  }
+  
+  header {
+    background-color: #333; /* Set background color for header */
+    color: #fff; /* Set text color for header */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    font-weight: bold; /* Set font weight */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space evenly between items */
+    align-items: center; /* Center-align items vertically */
+  }
+  
+  .logo img {
+    max-height: 50px; /* Set maximum height for logo image */
+  }
+  nav ul {
+    list-style-type: none; /* Remove list bullet */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #444; /* Set background color for navigation menu */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+  
+  nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add margin between list items */
+    position: relative; /* Set position to relative */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f3f3f3; /* Set text color for links */
+    font-weight: bold; /* Set font weight */
+    padding: 10px 20px; /* Add padding */
+    position: relative; /* Set position to relative */
+  }
+  
+  nav ul li a:hover::before {
+    content: ''; /* Add pseudo-element content */
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Take up full width */
+    height: 100%; /* Take up full height */
+    background-color: rgba(255, 255, 255, 0.1); /* Set background color with transparency */
+    border-radius: 5px; /* Add border radius */
+    z-index: -1; /* Set z-index to position behind the link text */
+  }
+  
+  main {
+    padding: 20px; /* Add padding */
+  }
+  
+  section {
+    margin-bottom: 40px; /* Add margin at the bottom */
+    background-color: #222; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  h2 {
+    color: #fff; /* Set text color */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    padding-bottom: 10px; /* Add padding at the bottom */
+    font-weight: bold; /* Set font weight */
+  }
+  
+  p {
+    color: #ddd; /* Set text color */
+    font-weight: 500; /* Set font weight */
+  }
+  
+  .btn {
+    display: inline-block; /* Display as inline-block */
+    padding: 10px 20px; /* Add padding */
+    background-color: #a50a0a; /* Set background color */
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    transition: background-color 0.3s ease; /* Add transition effect */
+    font-family: 'Bebas Neue', sans-serif; /* Set font family */
+  }
+  
+  .btn:hover {
+    background-color: #a50a0a86; /* Change background color on hover */
+  }
+  
+  footer {
+    background-color: #333; /* Set background color for footer */
+    color: #fff; /* Set text color for footer */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+  
+  footer nav ul {
+    list-style-type: none; /* Remove list bullet */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+  
+  footer nav ul li {
+    margin-right: 20px; /* Add margin between list items */
+    margin-bottom: 10px; /* Add margin at the bottom */
+    position: relative; /* Set position to relative */
+  }
+  
+  footer nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f3f3f3; /* Set text color for links */
+    font-weight: bold; /* Set font weight */
+    padding: 5px 10px; /* Add padding */
+    position: relative; /* Set position to relative */
+  }
+  
+  footer nav ul li a:hover::before {
+    content: ''; /* Add pseudo-element content */
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Take up full width */
+    height: 100%; /* Take up full height */
+    background-color: rgba(255, 255, 255, 0.1); /* Set background color with transparency */
+    border-radius: 5px; /* Add border radius */
+    z-index: -1; /* Set z-index to position behind the link text */
+  }
+  
+  footer p {
+    margin: 0; /* Remove margin */
+  }
+  
+  @media (max-width: 767px) {
+    footer nav ul {
+      flex-direction: column; /* Arrange items in a column */
+      align-items: center; /* Center-align items horizontally */
+    }
+  
+    footer nav ul li {
+      margin-right: 0; /* Remove margin */
+    }
+  }
+  
+  .character {
+    color: #a50a0a; /* Set text color */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  .character:hover {
+    text-decoration: underline; /* Underline text on hover */
+  }
+  
+  .image-collage {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    margin-top: 20px; /* Add margin at the top */
+  }
+  
+  .image-collage img {
+    max-width: calc(33.33% - 10px); /* Set maximum width for images */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 20px rgba(165, 10, 10, 0.5); /* Add box shadow */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-collage {
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+  
+    .image-collage img {
+      max-width: calc(50% - 10px); /* Set maximum width for images */
+      margin-bottom: 10px; /* Add margin at the bottom */
+    }
+  }
+  
+  .nav-toggle {
+    display: none; /* Hide the navigation toggle by default */
+    cursor: pointer; /* Set cursor to pointer */
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Set z-index */
+  }
+  
+  .nav-toggle span {
+    display: block; /* Display as block */
+    width: 30px; /* Set width */
+    height: 3px; /* Set height */
+    margin-bottom: 5px; /* Add margin at the bottom */
+    background-color: #fff; /* Set background color */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .nav-menu {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-end; /* Align items to the end */
+    align-items: center; /* Center-align items vertically */
+  }
+  
+  @media (max-width: 767px) {
+    header {
+      padding: 10px; /* Add padding */
+      flex-direction: row; /* Arrange items in a row */
+      justify-content: space-between; /* Space items evenly */
+      align-items: center; /* Center-align items vertically */
+    }
+  
+    .nav-toggle {
+      display: block; /* Display the navigation toggle */
+    }
+  
+    .nav-menu {
+      display: none; /* Hide the navigation menu by default */
+      flex-direction: column; /* Arrange items in a column */
+      align-items: flex-start; /* Align items to the start */
+      background-color: #444; /* Set background color */
+      padding: 10px; /* Add padding */
+      position: absolute; /* Set position to absolute */
+      top: 100%; /* Position at the bottom of the header */
+      right: 0; /* Position at the right */
+      width: 50%; /* Set width */
+      z-index: 1; /* Set z-index */
+    }
+  
+    .nav-menu.show {
+      display: flex; /* Show the navigation menu */
+    }
+  
+    .nav-menu li {
+      margin-bottom: 10px; /* Add margin at the bottom */
+    }
+    nav ul {
+      text-align: left; /* Left-align text */
+    }
+  
+    nav ul li {
+      display: block; /* Display as block */
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 10px; /* Add margin at the bottom */
+    }
+  
+    main {
+      padding: 10px; /* Add padding */
+    }
+  
+    section {
+      padding: 10px; /* Add padding */
+    }
+  
+    .image-collage {
+      flex-direction: column; /* Arrange items in a column */
+      align-items: center; /* Center-align items horizontally */
+    }
+  
+    .image-collage img {
+      max-width: 100%; /* Set maximum width */
+      margin-bottom: 10px; /* Add margin at the bottom */
+    }
+  
+    footer {
+      position: static; /* Reset position */
+      height: auto; /* Set height to auto */
+    }
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav ul li {
+      margin-right: 10px; /* Adjust margin */
+    }
+  
+    .image-collage img {
+      max-width: calc(50% - 10px); /* Adjust maximum width for images */
+    }
+  }
+  
+  /* Styles for desktops */
+  @media (min-width: 992px) {
+    /* Existing desktop styles */
+  }
